@@ -9,10 +9,10 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Single-page developer portfolio</title>
+  <title>Lexsa Campbell</title>
 </head>
 <body>
   <header class="header">
@@ -42,7 +42,8 @@
           </li>
 
           <li>
-            <a target="_blank" href="https://www.linkedin.com/in/lexsacampbell/" class="header__social-link">
+            <a target="_blank" href="https://www
+            inkedin.com/in/lexsacampbell/" class="header__social-link">
               <svg 
                 role="img"
                 xmlns="http://www.w3.org/2000/svg" 
@@ -66,26 +67,31 @@
     <section class="hero">
       <div class="wrapper hero__wrapper">
         <div class="hero__text">
-          <h1 class="hero__headline | text-white lh-h1 ls-xl">Nice to 
+          <h1 class="hero__headline | text-white lh-h1 ls-xl ff-heading">Nice to 
             <br />meet you! I'm <br /><span>Lexsa Campbell</span>.</h1>
-          <p class="hero__description | fs-body text-gray lh-body">Based in Los Angeles, I'm a front-end engineer passionate about 
-            building web apps that users love and learning as much as I can along the way.</p>
-          <div class="hero__links">
-            <!-- <a href="./resume.pdf" target="_blank" class="hero__resume | underline">View my resume</a> -->
+          <p class="hero__description | fs-body text-gray lh-body">Based in Los Angeles, I'm a front-end software engineer passionate about 
+            building products that users love and learning as much as I can along the way.</p>
+          <div class="hero__links | flex">
+            <a href="./LexsaCampbellresume.pdf" target="_blank" class="hero__resume | underline">View my resume</a>
             <a href="#contact" class="underline">Contact me</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="skills">
-      <div class="wrapper skills__wrapper">
-        <h3 class="skills__title | text-white ls-lg lh-h3">About Me</h3>
-        <p>I'm a full-stack software engineer and recent coding bootcamp graduate. Before diving into engineering, 
-          I spent seven years working in performance marketing for brands like Society6, Saatchi Art, Dropbox, and Verizon. 
-          But my love of coding and problem-solving eventually led me to pursue a career 
-          in software engineering, and I am currently for my next opportunity. I am particularly drawn to front-end work, and my 
-          favorite technologies to work with are React, CSS, and JavaScript.
+    <section class="about-me">
+      <div class="wrapper about-me__wrapper">
+        <h3 class="about-me__title | text-white ls-lg lh-h3 ff-heading">About Me</h3>
+        <p>I'm a front-end software engineer and recent coding bootcamp graduate. Before diving into engineering, 
+          I spent six years working in performance marketing for brands like Society6, Saatchi Art, Dropbox, and Verizon. 
+          I loved working for creative, design-oriented brands and am always at my best when I am able to work closely 
+          with my teammates across product, design, marketing, and engineering to build exceptional digital experiences 
+          for our customers.
+        </p>
+        <br>
+        <p>
+          In my next role, I am hoping to combine my experience in front-end engineering, background in marketing, and 
+          interests in visual design and user experience. Let's connect! 
         </p>
       </div>
     </section>
@@ -93,12 +99,33 @@
     <section class="projects">
       <div class="wrapper projects__wrapper">
         <div class="projects__heading | flex">
-          <h2 class="projects__headline | fs-h3">Projects</h2>
+          <h2 class="projects__headline | fs-h3 ff-heading">Projects</h2>
           <a href="#contact" class="underline">Contact me</a>
         </div>
         <div class="projects | grid">
 
-          <div class="projects__item">
+          <div class="projects__item grid-item-1">
+            <picture class="projects__picture | picture__outline">
+              <img
+                class="projects__image"
+                src="./images/portfolio.png"
+                alt="screenshot of design portfolio website"
+                width-="343"
+                height="253"
+              />
+            </picture>
+            <h3 class="projects__name | uppercase ff-heading">Design Portfolio</h3>
+            <p class="projects__tags">
+              <span class="text-gray | uppercase">HTML</span>
+              <span class="text-gray | uppercase">CSS</span>
+            </p>
+            <div class="projects__links | flex">
+              <a href="https://lexsac.github.io/single-page-portfolio/" target="_blank" class="underline">View Project</a>
+              <a href="https://github.com/lexsac/single-page-portfolio" target="_blank" class="underline">View Code</a>
+            </div>
+          </div>
+
+          <div class="projects__item grid-item-2">
             <picture class="projects__picture | picture__outline">
               <img
                 class="projects__image"
@@ -108,7 +135,7 @@
                 height="253"
               />
             </picture>
-            <h3 class="projects__name | uppercase">Space Tourism Site</h3>
+            <h3 class="projects__name | uppercase ff-heading">Space Tourism Site</h3>
             <p class="projects__tags">
               <span class="text-gray | uppercase">React</span>
               <span class="text-gray | uppercase">CSS</span>
@@ -119,7 +146,7 @@
             </div>
           </div>
 
-          <div class="projects__item">
+          <div class="projects__item grid-item-3">
             <picture class="projects__picture">
               <img
                 class="projects__image"
@@ -129,7 +156,7 @@
                 height="253"
               />
             </picture>
-            <h3 class="projects__name | uppercase">Memory Game</h3>
+            <h3 class="projects__name | uppercase ff-heading">Memory Game</h3>
             <p class="projects__tags">
               <span class="text-gray | uppercase">HTML</span>
               <span class="text-gray | uppercase">CSS</span>
@@ -141,47 +168,25 @@
             </div>
           </div>
 
-          <div class="projects__item">
+          <div class="projects__item grid-item-4">
             <picture class="projects__picture">
               <img
                 class="projects__image"
-                src="./images/job-board.png"
-                alt="screenshot of learning platform website with different courses"
+                src="./images/bookmark-lp.png"
+                alt="screenshot of landing page project"
                 width-="343"
                 height="253"
               />
             </picture>
-            <h3 class="projects__name | uppercase">Job Board</h3>
+            <h3 class="projects__name | uppercase ff-heading">Coming soon!</h3>
             <p class="projects__tags">
-              <span class="text-gray | uppercase">Python</span>
-              <span class="text-gray | uppercase">Flask</span>
-              <span class="text-gray | uppercase">PostgreSQL</span>
-              <span class="text-gray | uppercase">Bootstrap</span>
+              <span class="text-gray | uppercase">React</span>
+              <span class="text-gray | uppercase">Material UI</span>
+              <span class="text-gray | uppercase">JavaScript</span>
             </p>
             <div class="projects__links | flex">
-              <a href="https://capstone-job-board.herokuapp.com" target="_blank" class="underline">View Project</a>
-              <a href="https://github.com/lexsac/capstone-job-board" target="_blank" class="underline">View Code</a>
-            </div>
-          </div>
-
-          <div class="projects__item">
-            <picture class="projects__picture | picture__outline">
-              <img
-                class="projects__image"
-                src="./images/portfolio.png"
-                alt="screenshot of design portfolio website"
-                width-="343"
-                height="253"
-              />
-            </picture>
-            <h3 class="projects__name | uppercase">Design Portfolio</h3>
-            <p class="projects__tags">
-              <span class="text-gray | uppercase">HTML</span>
-              <span class="text-gray | uppercase">CSS</span>
-            </p>
-            <div class="projects__links | flex">
-              <a href="https://lexsac.github.io/single-page-portfolio/" target="_blank" class="underline">View Project</a>
-              <a href="https://github.com/lexsac/single-page-portfolio" target="_blank" class="underline">View Code</a>
+              <a href="https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158" target="_blank" class="underline">View Project</a>
+              <a href="https://github.com/lexsac/bookmark-landing-page" target="_blank" class="underline">View Code</a>
             </div>
           </div>
 
@@ -192,7 +197,7 @@
     <section id="contact" class="contact | bg-body-2">
       <div class="wrapper contact__wrapper | flex">
         <div class="contact__heading">
-          <h2 class="contact__headline | text-white fs-h3">Contact</h2>
+          <h2 class="contact__headline | text-white fs-h3 ff-heading">Contact</h2>
           <p class="contact__description | text-gray fs-body lh-body">
             I would love to hear about your project and how I could help.
             Please fill in the form, and I'll get back to you as soon as
